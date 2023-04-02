@@ -12,21 +12,30 @@ Kustomize is a tool for customizing Kubernetes configurations, simplifying the r
 ## Base
 
 `cd kustomize`
+
 `kubectl kustomize base`
+
 `kubectl apply -k base`
+
 `kubectl get all`
 
 
 
 ## Staging
-`cd overlays/staging`
+`cd kustomize/overlays/staging`
+
 `kubectl kustomize .`
+
 `kubectl apply -k .`
+
 `kubectl get all -l env=staging`
 
 ## Production
 
-`cd overlays/production`
+`cd kustomize/overlays/production`
+
 `kubectl kustomize .`
+
 `kubectl apply -k .`
+
 `kubectl get all -l env=prod`

@@ -1,0 +1,12 @@
+commonLabels:
+  app: webapp
+  env: base
+  version: "1.02"
+  org: cloudacademy.com
+  team: devops.labs
+
+resources:
+  - configmap.yaml
+  - deployment.yaml
+  - service.yaml
+  - ingress.yaml
